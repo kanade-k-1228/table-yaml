@@ -3,6 +3,17 @@
 部分的にテーブルを書くことができる、yamlの拡張です。
 
 ```yaml:
+table: 
+#{ name : age : school
+ - hoge : 20  : foo univ
+ - fuga : 21  : bar col
+ - piyo : 22  : foo univ
+#}
+```
+
+このようなテーブルを、
+
+```yaml:
 table:
  - name: hoge
    age: 20
@@ -15,23 +26,14 @@ table:
    school: foo univ
 ```
 
-このような、テーブル構造をもったyamlを、
+このようなyamlに変換します。
 
-```yaml:
-table: 
-#{ name : age : school
- - hoge : 20  : foo univ
- - fuga : 21  : bar col
- - piyo : 22  : foo univ
-#}
-```
-
-このように書くことができるようにします。
-
-`#{` ~ `#}` で囲まれた部分をテーブルとして認識します。
+- `#{` ~ `#}` で囲まれた部分をテーブルとして認識します。
+- `#{` で始まる行はヘッダです。
+- テーブルの中の要素はプリミティブ型
 
 ## 使い方
 
 ```
-$ tyaml input.tyaml [-o output.yaml]
+$ tyaml input.tyaml output.yaml
 ```
