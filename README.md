@@ -3,27 +3,35 @@
 部分的にテーブルを書くことができる、yamlの拡張です。
 
 ```yaml:
-table: 
-#{ name : age : school
- - hoge : 20  : foo univ
- - fuga : 21  : bar col
- - piyo : 22  : foo univ
+prefecture:
+#{ name     : suffix : area
+ - tokyo    : to     : kanto
+ - kyoto    : fu     : kinki
+ - osaka    : fu     : kinki
+ - hokkaido : do     : tohoku
+ - aichi    : ken    : tokai
 #}
 ```
 
 このようなテーブルを、
 
 ```yaml:
-table:
- - name: hoge
-   age: 20
-   school: foo univ
- - name: fuga
-   age: 21
-   school: bar col
- - name: piyo
-   age: 22
-   school: foo univ
+prefecture:
+ - name: tokyo
+   suffix: to
+   area: kanto
+ - name: kyoto
+   suffix: fu
+   area: kinki
+ - name: osaka
+   suffix: fu
+   area: kinki
+ - name: hokkaido
+   suffix: do
+   area: tohoku
+ - name: aichi
+   suffix: ken
+   area: tokai
 ```
 
 このようなyamlに変換します。
