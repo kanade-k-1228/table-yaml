@@ -1,0 +1,29 @@
+hoge: fuga
+users: 
+ - name: hoge
+   age: 20
+   school: foo_univ
+ - name: fuga
+   age: 21
+   school: bar_col
+ - name: piyo
+   age: 22
+   school: foo_univ
+table: 
+ - title: prefecture
+ - content:
+   - name: tokyo
+     suffix: to
+     area: kanto
+   - name: kyoto
+     suffix: fu
+     area: kinki
+   - name: osaka
+     suffix: fu
+     area: kinki
+   - name: hokkaido
+     suffix: do
+     area: tohoku
+   - name: aichi
+     suffix: ken
+     area: tokai
